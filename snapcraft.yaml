@@ -1,4 +1,4 @@
-name: node-red
+name: node-red-stable
 version: 0.17.5-4
 summary: Flow-based programming for the Internet of Things
 description: |
@@ -10,7 +10,7 @@ confinement: strict
 
 apps:
   red:
-    command: bin/node-red-snap -v --userDir "$SNAP_USER_DATA"
+    command: bin/node-red-stable -v --userDir "$SNAP_USER_DATA"
     daemon: simple
     restart-condition: always
     plugs: [network, network-bind ]
